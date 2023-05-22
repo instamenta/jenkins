@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+console.log("start")
 app.get('/', function (req, res) {
     res.send('{ "response": "Hello From Thetips4you" }');
 });
@@ -11,5 +11,9 @@ app.get('/will', function (req, res) {
 app.get('/ready', function (req, res) {
     res.send('{ "response": " Great!, It works!" }');
 });
-app.listen(process.env.PORT || 3000);
+console.log("mid")
+
+app.listen(3010);
+console.log("end")
+
 module.exports = app;
