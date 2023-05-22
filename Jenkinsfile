@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/instamenta/jenkins.git'
+        git credentialsId: 'instamenta-jenkinsapp', url: 'https://github.com/instamenta/jenkins'
       }
     }
 
